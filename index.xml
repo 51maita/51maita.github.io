@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>码上技师</title>
+    <link>https://51maita.github.io/</link>
+    <description>Recent content on 码上技师</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 10 Mar 2020 00:13:27 +0000</lastBuildDate>
+    
+	<atom:link href="https://51maita.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>五分钟拥有自己的免费博客</title>
+      <link>https://51maita.github.io/post/get-free-blog-in-5-minitues/</link>
+      <pubDate>Fri, 13 Mar 2020 14:37:45 +0800</pubDate>
+      
+      <guid>https://51maita.github.io/post/get-free-blog-in-5-minitues/</guid>
+      <description>1. 前言 意叔我作为多年老码农，一直想拥有属于自己的博客。但每每想着要搭建一个博客要购买服务器（租用虚拟空间），要搭建博客网站，要备案，还要购买域名&amp;hellip;就直接打退堂鼓了。直到有一天遇到了Hugo 和 Github Pages。 Hugo: 一个开源的静态网站生成器，号称是世界上最快的创建网站的框架。</description>
+    </item>
+    
+    <item>
+      <title>关于我</title>
+      <link>https://51maita.github.io/about/</link>
+      <pubDate>Tue, 10 Mar 2020 00:13:27 +0000</pubDate>
+      
+      <guid>https://51maita.github.io/about/</guid>
+      <description>待完善，现负责技术管理。 公众号，扫码关注</description>
+    </item>
+    
+    <item>
+      <title>归档</title>
+      <link>https://51maita.github.io/archives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://51maita.github.io/archives/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>搜索</title>
+      <link>https://51maita.github.io/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://51maita.github.io/search/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>五分钟拥有自己的免费博客 | 码上技师</title>
+    <meta property="og:title" content="五分钟拥有自己的免费博客 - 码上技师">
+    <meta property="og:type" content="article">
+        
+    <meta property="article:published_time" content='2020-03-13T14:37:45&#43;08:00'>
+        
+        
+    <meta property="article:modified_time" content='2020-03-14T17:30:52&#43;08:00'>
+        
+    <meta name="Keywords" content="代码技师、中年码农、程序员加薪、程序员赚钱、商业案例、案例教程">
+    <meta name="description" content="五分钟拥有自己的免费博客">
+        <meta name="author" content="意叔">
+        
+    <meta property="og:url" content="https://51maita.github.io/post/get-free-blog-in-5-minitues/">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href='/css/normalize.css'>
+    <link rel="stylesheet" href='/css/style.css'>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-4031353640611810",
+        enable_page_level_ads: true
+    });
+    </script>
+    
+
+
+    
+    
+        <link rel="stylesheet" href='/css/douban.css'>
+    
+        <link rel="stylesheet" href='/css/other.css'>
+    
+</head>
+
+
+<body>
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="https://51maita.github.io">
+                        码上技师<sup>意叔</sup>
+                    </a>
+                
+                <p class="description">技术创造价值</p>
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="current" href="https://51maita.github.io">首页</a>
+                    
+                    <a  href="https://51maita.github.io/tools/" title="工具">工具</a>
+                    
+                    <a  href="https://51maita.github.io/archives/" title="归档">归档</a>
+                    
+                    <a  href="https://51maita.github.io/about/" title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    <style type="text/css">
+    .post-toc {
+        position: fixed;
+        width: 200px;
+        margin-left: -210px;
+        padding: 5px 10px;
+        font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+        font-size: 12px;
+        border: 1px solid rgba(0, 0, 0, .07);
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.98);
+        background-clip: padding-box;
+        -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        word-wrap: break-word;
+        white-space: nowrap;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        z-index: 999;
+        cursor: pointer;
+        max-height: 70%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .post-toc .post-toc-title {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .post-toc .post-toc-content {
+        font-size: 15px;
+    }
+
+    .post-toc .post-toc-content>nav>ul {
+        margin: 10px 0;
+    }
+
+    .post-toc .post-toc-content ul {
+        padding-left: 20px;
+        list-style: square;
+        margin: 0.5em;
+        line-height: 1.8em;
+    }
+
+    .post-toc .post-toc-content ul ul {
+        padding-left: 15px;
+        display: none;
+    }
+
+    @media print,
+    screen and (max-width:1057px) {
+        .post-toc {
+            display: none;
+        }
+    }
+</style>
+<div class="post-toc" style="position: absolute; top: 188px;">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-前言">1. 前言</a></li>
+    <li><a href="#2-软件准备">2. 软件准备</a>
+      <ul>
+        <li><a href="#21-下载和安装git客户端">2.1 下载和安装Git客户端</a></li>
+        <li><a href="#22-下载和安装hugo">2.2 下载和安装Hugo</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-创建网站">3. 创建网站</a>
+      <ul>
+        <li><a href="#31-生成站点">3.1 生成站点</a></li>
+        <li><a href="#32-安装皮肤">3.2 安装皮肤</a></li>
+        <li><a href="#33-配置皮肤">3.3 配置皮肤</a></li>
+        <li><a href="#34-创建文章">3.4 创建文章</a></li>
+        <li><a href="#35-本地运行">3.5 本地运行</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-发布网站">4. 发布网站</a>
+      <ul>
+        <li><a href="#41-创建github仓库">4.1 创建github仓库</a></li>
+        <li><a href="#42-生成网站">4.2 生成网站</a></li>
+        <li><a href="#43-发布网站">4.3 发布网站</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-个性化">5. 个性化</a>
+      <ul>
+        <li><a href="#51-自定义域名">5.1 自定义域名</a></li>
+        <li><a href="#52-支持https">5.2 支持HTTPS</a></li>
+        <li><a href="#53-皮肤与插件">5.3 皮肤与插件</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var postToc = $(".post-toc");
+        if (postToc.length) {
+            var leftPos = $("#main").offset().left;
+            if(leftPos<220){
+                postToc.css({"width":leftPos-10,"margin-left":(0-leftPos)})
+            }
+
+            var t = postToc.offset().top - 20,
+                a = {
+                    start: {
+                        position: "absolute",
+                        top: t
+                    },
+                    process: {
+                        position: "fixed",
+                        top: 20
+                    },
+                };
+            $(window).scroll(function () {
+                var e = $(window).scrollTop();
+                e < t ? postToc.css(a.start) : postToc.css(a.process)
+            })
+        }
+    })
+</script>
+    <article class="post">
+        <header>
+            <h1 class="post-title">五分钟拥有自己的免费博客</h1>
+        </header>
+        <date class="post-meta meta-date">
+            2020年3月13日
+        </date>
+        
+        <div class="post-meta">
+            <span>|</span>
+            
+            <span class="meta-category"><a href='https://51maita.github.io/categories/%E6%95%99%E7%A8%8B'>教程</a></span>
+            
+        </div>
+        
+        
+        <div class="post-meta">
+            <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
+                    阅读</span></span>
+        </div>
+        
+        
+        <div class="post-content">
+            <h2 id="1-前言">1. 前言</h2>
+<p>      <a href="https://www.51maita.com/post/%E9%9A%8F%E7%AC%94/aboutme/">意叔</a>我作为多年老码农，一直想拥有属于自己的博客。但每每想着要搭建一个博客要购买服务器（租用虚拟空间），要搭建博客网站，要备案，还要购买域名&hellip;就直接打退堂鼓了。直到有一天遇到了<a href="https://gohugo.io/">Hugo</a> 和 <a href="https://pages.github.com/">Github Pages</a>。</p>
+<blockquote>
+<p>Hugo: 一个开源的静态网站生成器，号称是世界上最快的创建网站的框架。其基于go语言开发，能够超快的生成静态页面。</p>
+</blockquote>
+<blockquote>
+<p>Github Pages: <a href="https://www.github.com">Github</a>是全部最大的开源网站，别称“世界上最大的同性交友网站”。上面有无数优秀的开源项目，是码农的最大宝库！而 <a href="https://pages.github.com/">Github Pages</a>则是Github提供的一个创建免费博客的站点。</p>
+</blockquote>
+<p>      本文记录了<a href="https://www.51maita.com/post/%E9%9A%8F%E7%AC%94/aboutme/">意叔</a>如何利用了<a href="https://gohugo.io/">Hugo</a> 和 <a href="https://pages.github.com/">Github Pages</a>搭建了自己的免费博客。供想快速搭建一个属于自己的免费博客的同学参考。</p>
+<h2 id="2-软件准备">2. 软件准备</h2>
+<blockquote>
+<p>本文基于 windows (win7 64位) 操作系统。如果你是32位的操作系统，则下载对应的软件包即可。</p>
+</blockquote>
+<h3 id="21-下载和安装git客户端">2.1 下载和安装Git客户端</h3>
+<ol>
+<li>Git客户端(版本:2.25.1): <a href="https://github.com/git-for-windows/git/releases/download/v2.25.1.windows.1/Git-2.25.1-64-bit.exe">64位下载地址</a>   <a href="https://github.com/git-for-windows/git/releases/download/v2.25.1.windows.1/Git-2.25.1-32-bit.exe">32位下载地址</a></li>
+<li>双击安装(譬如安装到d:\Program Files\Git;)</li>
+<li>将git命令路径(d:\Program Files\Git\cmd)添加到系统环境变量Path中</li>
+</ol>
+<h3 id="22-下载和安装hugo">2.2 下载和安装Hugo</h3>
+<ol>
+<li>Hugo(版本:0.67.0)： <a href="https://github.com/gohugoio/hugo/releases/download/v0.67.0/hugo_0.67.0_Windows-64bit.zip">64位下载地址</a>  <a href="https://github.com/gohugoio/hugo/releases/download/v0.67.0/hugo_0.67.0_Windows-32bit.zip">32位下载地址</a></li>
+<li>解压到指定目录(譬如：E:\blog,==本文后续的操作都基于本目录==)</li>
+<li>将解压路径(E:\blog)添加到系统环境变量Path中</li>
+</ol>
+<h2 id="3-创建网站">3. 创建网站</h2>
+<h3 id="31-生成站点">3.1 生成站点</h3>
+<ol>
+<li>进入命令控制台窗口(开始-&gt;运行-&gt; 输入 &lsquo;cmd&rsquo; 回车 )</li>
+</ol>
+<blockquote>
+<p>推荐使用<a href="http://cmder.net">cmder</a> 代替系统默认的命令行窗口</p>
+</blockquote>
+<ol start="2">
+<li>进入要创建网站的目录</li>
+</ol>
+<blockquote>
+<p>cd E:\blog</p>
+</blockquote>
+<ol start="3">
+<li>生成站点(以下命令生成名为【51maita】的站点)</li>
+</ol>
+<blockquote>
+<p>hugo new site 51maita</p>
+</blockquote>
+<ol start="4">
+<li>进入站点目录</li>
+</ol>
+<blockquote>
+<p>cd 51maita</p>
+</blockquote>
+<h3 id="32-安装皮肤">3.2 安装皮肤</h3>
+<p>可以到hugo官网的 <a href="https://themes.gohugo.io/">皮肤列表</a> 挑选一个心仪的皮肤，找到对应皮肤的 GitHub地址，创建目录themes，在themes目录里把皮肤 git clone 下来即可。 以下命令安装 ==even== 皮肤,其地址为：https://github.com/olOwOlo/hugo-theme-even</p>
+<blockquote>
+<ul>
+<li>cd themes ==进入主题皮肤目录==</li>
+<li>git clone  <a href="https://github.com/olOwOlo/hugo-theme-even">https://github.com/olOwOlo/hugo-theme-even</a>
+==等待下载完成后即可配置皮肤==</li>
+</ul>
+</blockquote>
+<h3 id="33-配置皮肤">3.3 配置皮肤</h3>
+<p>将 themes/==even==/exampleSite目录下的config.toml复制到网站根目录(blog/51maita)(==存在则覆盖==),并根据自身情况修改对应的配置即可。</p>
+<blockquote>
+<ul>
+<li>copy themes\even\exampleSite\config.toml .\config.toml</li>
+</ul>
+</blockquote>
+<p>修改config.toml文件，设置 theme===even==</p>
+<h3 id="34-创建文章">3.4 创建文章</h3>
+<blockquote>
+<p>hugo new post/first.md ==在post目录创建first.md的文章==</p>
+</blockquote>
+<h3 id="35-本地运行">3.5 本地运行</h3>
+<blockquote>
+<p>hugo server &ndash;theme=even &ndash;buildDrafts
+==成功的话，即可通过http://localhost:1313访问==</p>
+</blockquote>
+<h2 id="4-发布网站">4. 发布网站</h2>
+<p>      网站最终是要让他人可以访问的，只在本地可以浏览意义不大，接下来我们看如何把网站发布到github pages，让全世界的人都可以访问。</p>
+<h3 id="41-创建github仓库">4.1 创建github仓库</h3>
+<ol>
+<li>我们需要到<a href="https://www.github.com">Github</a>上申请一个账号。譬如<a href="https://www.51maita.com/post/%E9%9A%8F%E7%AC%94/aboutme/">意叔</a>申请了一个用户名为==51mailta==的账号。</li>
+<li>创建一个名为：用户名.github.io 的仓库，如<a href="https://www.51maita.com/post/%E9%9A%8F%E7%AC%94/aboutme/">意叔</a>的用户名为51maita，则创建一个 51maita.github.io 的仓库(须是公开的参控股,即public模式）</li>
+</ol>
+<h3 id="42-生成网站">4.2 生成网站</h3>
+<blockquote>
+<p>hugo &ndash;theme=even &ndash;baseUrl=&quot;https://51maita.github.io&rdquo; &ndash;buildDrafts</p>
+</blockquote>
+<p>参数说明</p>
+<blockquote>
+<ul>
+<li>&ndash;theme 指定主题</li>
+<li>&ndash;baseUrl 指定网站首页地址</li>
+<li>&ndash;buildDrafts 创建草稿(可选)</li>
+</ul>
+</blockquote>
+<p>执行以上命令后会在网站目录生成一个public文件夹，里面的内容即是我们的博客网站文件，接下来我们将其发布到<a href="https://pages.github.com/">Github Pages</a>。</p>
+<h3 id="43-发布网站">4.3 发布网站</h3>
+<ol>
+<li>进入public目录</li>
+</ol>
+<blockquote>
+<p>cd public</p>
+</blockquote>
+<ol start="2">
+<li>初始化本地仓库</li>
+</ol>
+<blockquote>
+<p>git init</p>
+</blockquote>
+<ol start="3">
+<li>将所有文件添加到版本控制</li>
+</ol>
+<blockquote>
+<p>git add .</p>
+</blockquote>
+<ol start="4">
+<li>提交到本地仓库</li>
+</ol>
+<blockquote>
+<p>git commit -m &ldquo;初始化提交&rdquo;</p>
+</blockquote>
+<ol start="5">
+<li>将本地仓库和github 网站关联起来</li>
+</ol>
+<blockquote>
+<p>git remote add origin <a href="https://github.com/51maita/51maita.github.io">https://github.com/51maita/51maita.github.io</a></p>
+</blockquote>
+<ol start="6">
+<li>发布到github网站</li>
+</ol>
+<blockquote>
+<p>git push <a href="https://github.com/51maita/51maita.github.io">https://github.com/51maita/51maita.github.io</a> master</p>
+</blockquote>
+<ol start="7">
+<li>发布成功</li>
+</ol>
+<blockquote>
+<p>浏览器输入 <a href="https://51maita.github.io">https://51maita.github.io</a> 即可访问自己的博客了。</p>
+</blockquote>
+<h2 id="5-个性化">5. 个性化</h2>
+<h3 id="51-自定义域名">5.1 自定义域名</h3>
+<ol>
+<li>申请一个自己的域名(可以到阿里云或腾讯云申请),譬如 <a href="http://www.51maita.com">www.51maita.com</a></li>
+<li>登录Github，选择并进入[用户名].github.io的仓库。如：51maita.github.io</li>
+<li>点击 [Settings] 进入设置,</li>
+<li>拖动滚动条到 [GitHub Pages] 设置 [Custom domain] 为自己的域名如: <a href="http://www.51maita.com">www.51maita.com</a></li>
+<li>点击保存即可通过自己的域名访问博客了。</li>
+</ol>
+<h3 id="52-支持https">5.2 支持HTTPS</h3>
+<ol>
+<li>登录域名管理后台，并将github pages的域名的A记录的值修改为下面IP的其中一个:</li>
+</ol>
+<blockquote>
+<ul>
+<li>185.199.108.153</li>
+<li>185.199.109.153</li>
+<li>185.199.110.153</li>
+<li>185.199.111.153</li>
+</ul>
+</blockquote>
+<p>==如果原来用的不是A记录，则删除新增。==</p>
+<ol start="2">
+<li>重新配置github pages的域名</li>
+</ol>
+<blockquote>
+<ul>
+<li>进入github pages的仓库的settings页面</li>
+<li>找到 GitHub Pages 的配制区域,删除之前配制的域名,保存.</li>
+<li>设置同样的域名,再保存.</li>
+<li>此时 【Enforce HTTPS 】选项是不可勾选状态,并且提示&ndash;Not yet available for your site because the certificate has not finished being issued (自定义域名) .</li>
+<li>==等大概两个多小时&hellip;.==</li>
+<li>此时【Enforce HTTPS 】选项应该可以勾选了。</li>
+<li>勾选上则可以使用https访问自定义域名了。</li>
+</ul>
+</blockquote>
+<h3 id="53-皮肤与插件">5.3 皮肤与插件</h3>
+<ol>
+<li>HUGO 提供了很多皮肤，可以到官网选择自己中意的皮肤。并可以根据自己的需要进行个性化配置和修改，具体请参考<a href="https://gohugo.io/documentation/">HUGO官方文档</a>，限于篇幅在此就不多做说明了。</li>
+</ol>
+
+        </div>
+
+        
+<div class="post-archive">
+    <ul class="post-copyright">
+        <li><strong>原文作者：</strong><a rel="author" href="https://51maita.github.io">意叔</a></li>
+        <li style="word-break:break-all"><strong>原文链接：</strong><a href="https://51maita.github.io/post/get-free-blog-in-5-minitues/">https://51maita.github.io/post/get-free-blog-in-5-minitues/</a></li>
+        <li><strong>版权声明：</strong>本作品采用<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a>进行许可，非商业转载请注明出处（作者，原文链接），商业转载请联系作者获得授权。</li>
+    </ul>
+</div>
+<br/>
+
+
+
+        
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/about/">关于我</a></li>
+        
+        <li><a href="/archives/">归档</a></li>
+        
+        <li><a href="/search/">搜索</a></li>
+        
+    </ul>
+</div>
+
+
+        <div class="post-meta meta-tags">
+            
+            <ul class="clearfix">
+                
+                <li><a href='https://51maita.github.io/tags/%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2'>免费博客</a></li>
+                
+                <li><a href='https://51maita.github.io/tags/hugo'>hugo</a></li>
+                
+                <li><a href='https://51maita.github.io/tags/github-pages'>github pages</a></li>
+                
+            </ul>
+            
+        </div>
+    </article>
+    
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "yourdiscussshortname" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
+    
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "51maita/51maita.github.io"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+    
+</div>
+
+                </div>
+
+                <div id="secondary">
+    <section class="widget">
+        <form id="search" action='https://51maita.github.io/search/' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="https://51maita.github.io">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="https://51maita.github.io/post/get-free-blog-in-5-minitues/" title="五分钟拥有自己的免费博客">五分钟拥有自己的免费博客</a>
+    </li>
+    
+</ul>
+    </section>
+
+    
+<section class="widget">
+    <h3 class="widget-title" style="color:red">福利派送</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a href="https://www.aliyun.com/minisite/goods?userCode=jdg9oj97&amp;share_source=copy_link" title="【2019双12】ALL IN CLoud 低至1折" target="_blank" style="color:red">
+                
+                    <img src="https://img.alicdn.com/tfs/TB1_rYHo7P2gK0jSZPxXXacQpXa-690-388.jpg">
+                
+            </a>
+        </li>
+        
+        <li>
+            <a href="https://cloud.tencent.com/act/cps/redirect?redirect=1048&amp;cps_key=14ff722692ac784fa8c3301c8c28d924&amp;from=console" title="助力产业智慧升级，云服务器首年88元起，更有千元代金券礼包免费领！" target="_blank" style="color:red">
+                
+                    <img src="https://upload-dianshi-1255598498.file.myqcloud.com/345-7c71532bd4935fbdd9a67c1a71e577b1767b805c.200%E7%89%88%E6%9C%ACB.jpg">
+                
+            </a>
+        </li>
+        
+        <li>
+            <a href="https://www.aliyun.com/acts/limit-buy?userCode=jdg9oj97" title="【渠道专享低折扣】11月特惠 限时2折" target="_blank" style="color:red">
+                
+                    <img src="https://img.alicdn.com/tfs/TB1hblJl7Y2gK0jSZFgXXc5OFXa-750-400.jpg">
+                
+            </a>
+        </li>
+        
+    </ul>
+</section>
+
+
+    <section class="widget">
+        <h3 class="widget-title">分类</h3>
+<ul class="widget-list">
+    
+    <li><a href="https://51maita.github.io/categories/%E6%95%99%E7%A8%8B/">教程 (1)</a></li>
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title">标签</h3>
+<div class="tagcloud">
+    
+    <a href="https://51maita.github.io/tags/github-pages/">github pages</a>
+    
+    <a href="https://51maita.github.io/tags/hugo/">hugo</a>
+    
+    <a href="https://51maita.github.io/tags/%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2/">免费博客</a>
+    
+</div>
+    </section>
+
+    
+<section class="widget">
+    <h3 class="widget-title">友情链接</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a target="_blank" href="https://blog.51maita.com/" title="码上技师">码上技师</a>
+        </li>
+        
+        <li>
+            <a target="_blank" href="http://yuedu.baidu.com/ebook/14a722970740be1e640e9a3e" title="Android Gradle权威指南">Android Gradle权威指南</a>
+        </li>
+        
+    </ul>
+</section>
+
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="https://51maita.github.io/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+    <div class="container">
+        &copy; 2020 <a href="https://51maita.github.io">码上技师 By 意叔</a>.
+        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
+        <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
+        
+    </div>
+</footer>
+
+
+    
+    <script type="text/javascript">
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+                }
+            };
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
+
+
+
+    <script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+
+
+    <script src='/js/douban.js'></script>
+
+</body>
+
+</html>
